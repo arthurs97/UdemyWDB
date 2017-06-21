@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Inputs Demo</title>
+</head>
+<body>
+
+<p>Do you prefer cats or dogs?</p>
+
+<form>
+	<label for="dogs">Dogs: </label>
+	<input id="dogs" type="radio" name="petChoice" value="DOGS">
+
+	<!--Note that both inputs have the same 'name'; this makes it so that only one can be chosen-->
+	<label for="cats">Cats: </label>
+	<input id="cats" type="radio" name="petChoice" value="CATS">
+
+	<p>What's your favorite color?</p>
+	<select name="color">
+		<option>Red</option>
+		<option>Orange</option>
+		<option>Yellow</option>
+	</select>
+
+	<p>How are you feeling?</p>
+	<select name="emotion">
+		<option value="happy">:)</option>
+		<option value="sad">:(</option>
+		<option value="neutral">:|</option>
+	</select>
+
+	<!--use textarea tag if the user needs to enter a substantial amount of text, bigger than text input tag-->
+	<textarea rows="50" cols="100"></textarea>
+
+<!--If button is last thing in form, it will submit the form-->
+	<button>Go!</button>
+</form>
+
+</body>
+</html>
