@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Forms Exercise</title>
+</head>
+<body>
+<h1>Register</h1>
+
+<form>
+	<label>First Name: <input type="text" placeholder="John" name="firstName" required></label>
+	<label>Last Name: <input type="text" placeholder="Smith" name="lastName" required></label>
+
+	<br>
+
+	<label>Male<input type="radio" name="gender" required></label>
+	<label>Female<input type="radio" name="gender" required></label>
+	<label>Other<input type="radio" name="gender" required></label>
+
+	<br>
+
+	<label>Email: <input type="email" placeholder="your email" name="email" required></label>
+	<label>Password: <input pattern=."{6,}" type="password" placeholder="hunter2" name="password" required></label>
+
+	<br>
+
+	<label>Birthday<input type="date" name="birthdate" required></label>
+
+	<br>
+
+	<label>I agree to the terms and conditions <input type="checkbox" required></label>
+
+	<br>
+	<button>Submit!</button>
+</form>
+
+
+</body>
+</html>
