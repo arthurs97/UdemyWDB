@@ -1,0 +1,19 @@
+body {
+	background: orange;
+}
+
+li {
+	border: 2px solid red;
+}
+
+
+/*
+# for id, . for class
+*/
+#special {
+	background-color: yellow;
+}
+
+.highlight {
+	background-color: red;
+}
