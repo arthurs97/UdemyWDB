@@ -1,0 +1,11 @@
+p {
+	border: 2px solid blue;
+	/*width/height percents are a percentage of the size of the parent element*/
+	width: 50%;
+	padding: 10px;
+	
+	/*margin: 100px;*/
+	/*format: top right bottom left*/
+	margin: 20px 40px 20px 40px;
+	/*margin auto basically centers*/
+}
