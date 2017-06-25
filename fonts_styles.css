@@ -1,0 +1,41 @@
+/*
+check out google fonts if you need fonts
+*/
+
+p {
+	font-family: Arial;
+}
+
+h1 {
+	font-family: 'Spectral', serif;
+}
+
+h1 {
+	/*
+	Use inspect element in browser to modify font-size and see how it looks more easily
+	*/
+	font-size: 40px;
+}
+
+span {
+	/*double size*/
+	font-size: 2.0em;
+	text-decoration: underline;
+	/*line-through (strikethrough), overline*/
+}
+
+p {
+/*	font weight ranges 100-800, in increments of 100
+*/	
+	font-weight: 700;
+
+	/*line spacing, e.g. line-height: 2 == double spaced*/
+	line-height: 2;
+
+	/*text-align pretty self explanatory*/
+	text-align: center;
+}
+
+h1 {
+	text-align: right;
+}
