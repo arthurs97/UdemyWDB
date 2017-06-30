@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Bootstrap Grid System Demo</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<style type="text/css">
+		.pink {
+			background: pink;
+			border: 1px solid purple;
+		}
+		.orange {
+			background: orange;
+			border: 1px dashed red;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<!-- <div class="row">
+just make sure your row adds up to 12 total
+		<div class="col-lg-6 pink">
+			COL-LG-6
+		</div>
+		<div class="col-lg-6 pink">
+			COL-LG-6
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-4 col-md-2 pink">
+			COL-LG-4
+		</div>
+		<div class="col-lg-4 col-md-2 pink">
+			COL-LG-4
+		</div>
+		<div class="col-lg-2 col-md-2 pink">
+			COL-LG-2
+		</div>
+		<div class="col-lg-2 col-md-2 pink">
+			COL-LG-2
+		</div>
+	</div>-->
+	<div class="row">
+		<!--a nested row-->
+		<div class="col-lg-3 col-md-3 col-sm-6 pink">
+			<div class="row">
+				<div class="col-lg-6 orange">first half</div>
+				<div class="col-lg-6 orange">second half</div>
+			</div>
+		</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 pink">hi</div>
+		<div class="col-lg-3 col-md-3 col-sm-6 pink">hi</div>
+		<!--bootstrap can extrapolate from md-3 that lg should also be 3, if no lg was specified-->
+		<div class="col-md-3 col-sm-6 pink">hi</div>
+	</div>
+</div>
+</body>
+</html>
