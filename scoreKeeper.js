@@ -16,6 +16,7 @@ p1.addEventListener("click", function() {
 	score.innerHTML = p1Score + " to " + p2Score;
 
 	if (p1Score === maxScore) {
+		p1.classList.add("winner");
 		alert("Game over! Player 1 wins.");
 	}
 })
@@ -25,6 +26,7 @@ p2.addEventListener("click", function() {
 	score.innerHTML = p1Score + " to " + p2Score;
 
 	if (p2Score === maxScore) {
+		p2.classList.add("winner")
 		alert("Game over! Player 2 wins.");
 	}
 })
