@@ -22,3 +22,9 @@ p {
 h1 {
     color: white;
 }
+
+#stripe {
+    background-color: white;
+    height: 30px;
+    text-align: center;
+}
