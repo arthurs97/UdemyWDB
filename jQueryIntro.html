@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Demo</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+<h1>jQuery Demo</h1>
+
+<ul>
+	<li>Newt</li>
+	<li>Howler Monkey <a href="monkey.com">link</a></li>
+	<li id="adorable">Pine Marten</li>
+</ul>
+
+<!--
+//basic selector css stuff
+$("li").css("border", "2px solid red")
+
+//pass an object
+var styles = {
+    color: "red",
+    background: "pink",
+    border: "2px solid purple"
+}
+$("h1").css(styles)
+
+
+//pass an object inline
+//if you pass an object in directly in jQuery, use camel case instead of hyphenating property names
+$("li").css({
+fontSize: "10px",
+border: "3px dashed purple",
+background: "rgba(89, 45, 20, 0.5)"
+})
+
+-->
+
+</body>
+</html>
