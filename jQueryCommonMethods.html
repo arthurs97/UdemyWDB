@@ -10,11 +10,21 @@
 
 <input type="text" placeholder="your name">
 
+<select name="" multiple>
+	<option value="">Ostrich</option>
+	<option value="">Turtle</option>
+	<option value="">Toad</option>
+</select>
+
 <ul>
 	<li>skittles</li>
 	<li>starburst</li>
 	<li>twix</li>
 </ul>
+
+<img src="https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg" alt="">
+<img src="https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg" alt="">
+<img src="https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg" alt="">
 
 <script>
 	//returns the text of h1 elements
@@ -33,6 +43,31 @@
 	//turns the ul into to li's as specified
 	//if multiple ul's existed, it would do this to all of them
 	$("ul").html("<li>hi1</li><li>hi2</li>");
+
+	//change all images to 200px width
+	$("img").css("width", "200px");
+
+	//attr allows you to access/change the attribute for elements
+	//change the image source for first image only
+	//alternately, you can do $("img:first") -- this is done through jQuery, not vanilla JS, and technically a bit slower
+	$("img:first-of-type").attr("src", 'http://www.coniferousforest.com/wp-content/uploads/2016/11/Pine-Marten-Teeth.jpg');
+	//change last. last() is a jQuery method
+	$("img").last().attr("src", 'http://www.coniferousforest.com/wp-content/uploads/2016/11/Pine-Marten-Teeth.jpg');
+
+	//change input type
+	$("input").attr("type", "color");
+	//change back
+	$("input").attr("type", "text");
+
+	//val() returns the value from form elements such as input, select, and textarea
+	console.log($("input").val())
+	//set the value of the input
+	$("input").val("Hi");
+	//this is useful for clearing an input, like so
+	$("input").val("");
+
+	//print the users selection
+	console.log($("select").val());
 </script>
 </body>
 </html>
