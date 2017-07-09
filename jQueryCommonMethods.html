@@ -3,6 +3,20 @@
 <head>
 	<title>jQuery Common Methods</title>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.correct {
+			color:  green;
+		}
+		.wrong {
+			color:  red;
+			background:  pink;
+		}
+		.done {
+			color:  gray;
+			text-decoration: line-through;
+		}
+	</style>
 </head>
 <body>
 
@@ -68,6 +82,14 @@
 
 	//print the users selection
 	console.log($("select").val());
+
+	$("h1").addClass("correct");
+	$("h1").removeClass("correct");
+	//add wrong class to all 3 li's
+	$("li").addClass("wrong");
+
+	//if the first li has class done ,remove it, else, add it 
+	$("li").first().toggleClass("done")
 </script>
 </body>
 </html>
