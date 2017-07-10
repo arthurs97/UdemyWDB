@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Common Methods</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+
+	<style type="text/css">
+		.correct {
+			color:  green;
+		}
+		.wrong {
+			color:  red;
+			background:  pink;
+		}
+		.done {
+			color:  gray;
+			text-decoration: line-through;
+		}
+	</style>
+</head>
+<body>
+
+<h1>jQuery methods demo page</h1>
+
+<input type="text" placeholder="your name">
+
+<select name="" multiple>
+	<option value="">Ostrich</option>
+	<option value="">Turtle</option>
+	<option value="">Toad</option>
+</select>
+
+<ul>
+	<li>skittles</li>
+	<li>starburst</li>
+	<li>twix</li>
+</ul>
+
+<img src="https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg" alt="">
+<img src="https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg" alt="">
+<img src="https://i.ytimg.com/vi/zx0gXM_FkgE/maxresdefault.jpg" alt="">
+
+<script>
+	//returns the text of h1 elements
+	$("h1").text();
+	//if multiple items present, text() concatenates each item's text into one string to return
+	$("ul").text();
+
+	//if you pass in a value, it updates the text
+	$("h1").text("new text");
+	//apply to collection: sets each selected element's text
+	$("li").text("doggo");
+
+	//.html() gets first element in set of matched elems, or sets the HTML contents of all matched elements
+	//this returns the elem.innerHTML
+	$("ul").html();
+	//turns the ul into to li's as specified
+	//if multiple ul's existed, it would do this to all of them
+	$("ul").html("<li>hi1</li><li>hi2</li>");
+
+	//change all images to 200px width
+	$("img").css("width", "200px");
+
+	//attr allows you to access/change the attribute for elements
+	//change the image source for first image only
+	//alternately, you can do $("img:first") -- this is done through jQuery, not vanilla JS, and technically a bit slower
+	$("img:first-of-type").attr("src", 'http://www.coniferousforest.com/wp-content/uploads/2016/11/Pine-Marten-Teeth.jpg');
+	//change last. last() is a jQuery method
+	$("img").last().attr("src", 'http://www.coniferousforest.com/wp-content/uploads/2016/11/Pine-Marten-Teeth.jpg');
+
+	//change input type
+	$("input").attr("type", "color");
+	//change back
+	$("input").attr("type", "text");
+
+	//val() returns the value from form elements such as input, select, and textarea
+	console.log($("input").val())
+	//set the value of the input
+	$("input").val("Hi");
+	//this is useful for clearing an input, like so
+	$("input").val("");
+
+	//print the users selection
+	console.log($("select").val());
+
+	$("h1").addClass("correct");
+	$("h1").removeClass("correct");
+	//add wrong class to all 3 li's
+	$("li").addClass("wrong");
+
+	//if the first li has class done ,remove it, else, add it 
+	$("li").first().toggleClass("done")
+</script>
+</body>
+</html>

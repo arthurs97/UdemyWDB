@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>jQuery Exercise 1</title>
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+</head>
+<body>
+<div>div 1</div>
+<div class="highlight">Div 2</div>
+<div id="third">Div 3</div>
+<div class="highlight">Div 4</div>
+
+
+<script type="text/javascript">
+	$("div").css("background", "purple");
+	$("div.highlight").css("width", "200px");
+	$("div#third").css("border", "2px solid orange");
+	$("div:first-of-type").css("color", "pink");
+
+</script>
+</body>
+</html>
